@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Pesquisa SenaiTec</h1>
-    </header>
-
+    <main>
+        <header>
+            <img src="./img/logo.png" alt="Logo SenaiTec" width="200px" height="200px">
+            <h1>Pesquisa SenaiTec</h1>
+        </header>
     <section>
         <form action="index.html" method="post">
             <fieldset>
@@ -53,14 +54,14 @@
                     <legend>Perfil</legend>
 
                     <label for="radio">Sexo:</label>
-                    <input type="checkbox" name="sexo" id="sexo" value="masculino" required> Masculino
-                    <input type="checkbox" name="sexo" id="sexo" value="feminino" required> Feminino
+                    <input type="radio" name="sexo" id="sexo1" value="masculino" required> Masculino
+                    <input type="radio" name="sexo" id="sexo2" value="feminino" required > Feminino
 
                     <br>
 
                     <label for="estado civil">Estado Civil:</label>
-                    <input type="checkbox" name="solteiro(a)" id="solteiro(a)" value="solteiro(a)" required> Solteiro(a)
-                    <input type="checkbox" name="casado(a)" id="casado(a)" value="casado(a)" required> Casado(a)
+                    <input type="radio" name="estado civil" id="estado civil1" value="solteiro(a)" required> Solteiro(a)
+                    <input type="radio" name="estado civil" id="estado civil2" value="casado(a)" required> Casado(a)
 
                     <br>
 
@@ -91,11 +92,27 @@
                     <legend>Opinião</legend>
 
                     <label for="escala de satisfação">Escala de Satisfação</label>
-                    <input type="checkbox" name="ruim" id="ruim" value="ruim">ruim
+                    <input type="radio" name="escala" id="escala_1" value="ruim">ruim
+                    <input type="radio" name="escala" id="escala_2" value="medio">medio
+                    <input type="radio" name="escala" id="escala_3" value="bom">bom
+                    <input type="radio" name="escala" id="escala_4" value="excelente">excelente
+
+                    <br>
+
+                    <label for="Comentário aberto">Comentário aberto:</label>
+                    <input type="text" name="comentario aberto" id="comentario aberto">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmações</legend>
+
+                    <label for="Consentimento">Consentimento do Usúario</label>
+                     <input type="checkbox" name="consentimento" id="consentimento" required> Eu concordo com a coleta e uso dos meus dados pessoais para fins de pesquisa (LGPD).
+
                 </fieldset>
 
                     <button type="Submit">Enviar</button>
-
+    </main>
         </form>
     </section>
 

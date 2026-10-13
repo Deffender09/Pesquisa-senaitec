@@ -1,23 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 body {
-    background-color: #4b4949;
+    background-color: #e7e2e2;
 }
 
 label {
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
     font-family: Arial, sans-serif;
 }
 
 input {
-    border: 1px solid #cccccc;
+    border: 1px solid #000000;
     border-radius: 4px;
     font-size: 14px;
 }
 
 h1{
-    color:#ffffff
+    color:#000000
 }
 
 fieldset{
-    color:#ffffff
+    color:#000000
 }
