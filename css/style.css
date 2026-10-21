@@ -67,6 +67,12 @@ input[type="checkbox"]{
     width:auto
 }
 
+input[type="color"]{
+    width: 40px;
+    height: 30px;
+    padding: 0 1px;
+    border-radius: 5px;
+}
 h1{
     color:#000000
 }
