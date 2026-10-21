@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pesquisa SenaiTec</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -54,37 +54,107 @@
                     <legend>Perfil</legend>
 
                     <label for="radio">Sexo:</label>
+
+                    <br>
+                    
                     <input type="radio" name="sexo" id="sexo1" value="masculino" required> Masculino
+
+                    <br>
+
                     <input type="radio" name="sexo" id="sexo2" value="feminino" required > Feminino
 
                     <br>
 
-                    <label for="estado civil">Estado Civil:</label>
-                    <input type="radio" name="estado civil" id="estado civil1" value="solteiro(a)" required> Solteiro(a)
-                    <input type="radio" name="estado civil" id="estado civil2" value="casado(a)" required> Casado(a)
+                        <label for="Estado Civil">Estado Civil:</label>
+                        <select>
+                            <option value="">Selecione...</option>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="Viuvo">Viuvo</option>
+                            <option value="Casamento ativo">Casamento ativo</option>
+                        </select>
 
                     <br>
 
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" name="cidade" id="cidade" required>
+
+                    <label for="Estado">Estado:</label>
+                    <select name="estado" > 
+                        <option value="">Selecione...</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+
+                    <label for="userCity">Cidade<label>
+                    <input type="text" name="userCity" id="userCity"
+                    placeholder="RJ-Rio de Janeiro">
                     </fieldset>
 
                     <fieldset>
                     <legend>Hábitos</legend>
 
-                    <label for="Redes Sociais">Redes Sociais:</label>
-                    <input type="text" name="facebook" id="facebook"> Facebook
-                    <input type="text" name="instagram" id="instagram"> Instagram
+                    <p>Redes Sociais</p>
+
+                    <input type="checkbox" name="userSocial" id="userSocial1">
+                    <label for="userSocial1">Facebook</label>
+
+                    <br>
+
+                    <input type="checkbox" name="userSocial" id="userSocial2">
+                    <label for="userSocial2">Instagram</label>
+
+                        <br>
+
+                        <input type="checkbox" name="userSocial" id="userSocial3">
+                        <label for="userSocial3">Twiter</label>
+
 
                     <br>
 
                     <label for="estilo musical">Estilo Musical:</label>
-                    <input type="text" name="estilo musical" id="estilo musical">
+                    <input type="text" name="userMusicStyle" id="userMusicStyle" list="userMusicStyles">
+
+                    <datalist id="userMusicStyles">
+                        <option value="Rock">Rock</option>
+                        <option value="Metal">Metal</option
+                        <option value="Funk">Funk</option>
+                        <option value="Sertanejo">Sertanejo</option>
+                        <option value="MPB">MPB</option>
+                        <option value="POP">POP</option>
+
+
+
+                    </datalist>
 
                     <br>
+                    <label for="favColor">Cor Favorita:</label>
 
-                    <label for="cor favorita">Cor Favorita:</label>
-                    <input type="text" name="cor favorita" id="cor favorita">
+                    <input type="color" name="fav color" id="favColor">
                     </fieldset>
 
                     <fieldset>
