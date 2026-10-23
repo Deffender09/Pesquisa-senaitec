@@ -98,3 +98,8 @@ textarea{
     min-height: 100px;
 }
 
+@font-face {
+      font-family: 'Unbounded', sans-serif;
+      src: url('../fonts/Unbounded-bold.ttf');
+      font-weight: 700;
+   }
