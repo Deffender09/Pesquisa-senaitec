@@ -103,3 +103,38 @@ textarea{
       src: url('../fonts/Unbounded-bold.ttf');
       font-weight: 700;
    }
+
+   input:invalid,
+   select:invalid{
+    border-color: red;
+   }
+
+   input:valid,
+   select:valid{
+    border-color: green;
+   }
+
+   button{
+    width: 100%;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+   }
+
+   button[type="submit"]:hover{
+    background-color: green;
+    color: white;
+    transition: 0.5;
+   }
+
+
+   button[type="reset"]:hover{
+    background-color: red;
+    color: white;
+    transition: 0.5;
+   }
